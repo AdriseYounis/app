@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
 import { DisplayUserDataFormComponent } from './display-user-data-form/display-user-data-form.component';
 import { Routes, RouterModule} from '@angular/router';
+import { HttpModule } from '@angular/http'
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const routes : Routes = [
   {
@@ -30,6 +32,8 @@ const routes : Routes = [
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
+    HttpModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
